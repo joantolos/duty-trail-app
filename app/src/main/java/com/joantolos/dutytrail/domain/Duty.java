@@ -1,18 +1,20 @@
 package com.joantolos.dutytrail.domain;
 
+import java.util.UUID;
+
 public class Duty {
 
-    private final int id;
+    private final String id;
     private final String name;
     private final Integer effort;
 
-    public Duty(int id, String name, Integer effort) {
-        this.id = id;
+    public Duty(String name, Integer effort) {
+        this.id = UUID.randomUUID().toString();
         this.name = name;
         this.effort = effort;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 

@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.joantolos.dutytrail.app.databinding.FragmentSecondBinding;
+import com.joantolos.dutytrail.domain.User;
 
 public class SecondFragment extends Fragment {
 

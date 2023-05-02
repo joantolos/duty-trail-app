@@ -2,20 +2,21 @@ package com.joantolos.dutytrail.domain;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 public class Squad {
 
-    private final int id;
+    private final String id;
     private final String name;
     private final List<Duty> duties;
 
-    public Squad(int id, String name) {
-        this.id = id;
+    public Squad(String name) {
+        this.id = UUID.randomUUID().toString();
         this.name = name;
         this.duties = new ArrayList<>();
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
